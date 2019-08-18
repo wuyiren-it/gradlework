@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.TableDao">
+    <resultMap id="tableMap" type="com.example.demo.pojo.Table">
+        <result column="id" property="id"/>
+        <result column="colunm" property="colunm"/>
+    </resultMap>
+   <select id ="query" resultMap="tableMap">
+      select * from t_table
+   </select>
+</mapper>
